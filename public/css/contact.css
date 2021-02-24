@@ -1,0 +1,154 @@
+  .wrape3 {
+    background-color: white;
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
+  .wrape3 h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  label {
+    font-size: 20px !important;
+    padding-top: 0px !important;
+  }
+
+.form-group{
+  margin-bottom: 30px;
+}
+
+
+  .btn {
+
+    padding: 10px 30px;
+    letter-spacing: 0.1rem;
+    font-weight: bolder;
+    border-style: none;
+    border-radius: 0px;
+    margin-top: 20px;
+    position: absolute;
+    right: 0px;
+    margin-bottom: 0px;
+    background-color: black;
+    color: white;
+  }
+
+  .btn:hover {
+    background-color: #FFF100;
+    color: black;
+
+  }
+
+
+
+  .container {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .form-control {
+    border-style: none;
+    border-radius: 0px;
+    border-bottom: 1px solid gray;
+
+  }
+
+  .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: gray;
+    outline: 0;
+    box-shadow: none;
+  }
+
+
+
+
+
+  .map {
+    width: 100%;
+  }
+
+  .mapground {
+    background-color: #FFFBC2;
+    height: 600px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  .world2img img {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+
+  .world2 {
+    width: 500px;
+    margin: 0px auto;
+    align-items: left;
+    padding-top: 60px;
+    padding: 50px;
+
+  }
+
+.worldbox33{
+  display: flex;
+  margin-top:50px;
+}
+
+.worldbox33 img{
+  padding-top: 5px;
+  width: 6%;
+  height: 6%;
+  margin-right: 20px;
+}
+
+.worldbox2 p{
+  font-size: 20px;
+}
+
+
+
+.worldbox22{
+  display: flex;
+}
+
+.worldbox22 img{
+  padding-top: 5px;
+  width: 6%;
+  height: 6%;
+  margin-right: 20px;
+}
+
+.worldbox21 p{
+  font-size: 24px;
+}
+
+  @media (max-width: 992px) {
+    .container {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .container {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+
+
+  @media (max-width: 576px) {
+    .container {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+

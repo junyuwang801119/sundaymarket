@@ -1,0 +1,426 @@
+*{
+	/*border: 1px solid #000 !important;*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	font-size: 10px;
+	color: #000;
+	font-family: "Arial", "微軟正黑體" , sans-serif;
+	letter-spacing: 0.08em;
+}
+header{
+	width: 100%;
+	height: 100px;
+	background-color: #efefef;
+}
+
+/*--------- component ---------*/
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+/*=============== shop ===============*/
+
+section{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+/*--------- slider ---------*/
+
+section .sliderBlock{
+	position: relative;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	padding: 60px 0;
+}
+section .sliderShop{
+	position: relative;
+	width: 80%;
+}
+
+section .sliderShop .sliderPic{
+	padding-top: 400px;
+	background-size: cover;
+	background-position: center;
+}
+section .sliderShop>button,
+.sliderShop .slick-dots{
+	display: none !important;
+}
+
+
+section .shopLogo{
+	text-align: center;
+	font-size: 25px;
+	position: relative;
+	font-weight: bold;
+	font-family: Medici Script;
+}
+section .shopLogo:before{
+	content: "";
+	display: block;
+	background-color: rgba(255,241,0);
+	height: 50%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -10%;
+	z-index: -9;
+}
+section .shopNav{
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	padding: 40px;
+	position: relative;
+}
+section .shopNav .shopClass{
+	width: 50%;
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: nowrap;
+}
+section .shopNav .shopClass a{
+
+	display: inline-block;
+	padding: 5px 15px;
+	font-size: 12px;
+}
+section .shopNav .shopClass li:after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background-color: rgb(255,241,0);
+	margin-top: 3px;
+	transition: width 0.3s;
+}
+section .shopNav .shopClass li:hover:after{
+	width: 100%;
+}
+section .shopNav .searchbar{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 15%;
+	height: 30px;
+	margin: 40px;
+}
+section .shopNav .searchbar .frame{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #efefef;
+	border-radius: 15px;
+}
+section .shopNav .searchbar .frame img{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	z-index: 1;
+	margin: 0 10px;
+}
+section .shopNav .searchbar .frame input{
+	width: 80%;
+	border: 0 none;
+	border-radius: 15px;
+	background-color: #efefef;
+	padding: 5px;
+	text-align: left;
+}
+
+/*--------- hr ---------*/
+
+/*hr{
+	width: 40%;
+	height: 1px;
+}*/
+
+/*=============== products ===============*/
+
+section .products{
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	align-items: flex-start;
+	flex-wrap: wrap;	
+	padding: 50px 0;
+}
+section .products .item{
+	width: 20%;
+	margin: 20px 10px;
+}
+section .products .item .frame{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow:	hidden;
+}
+section .products .item .frame .pic{
+	width: 100%;
+	padding-top: 100%;
+	background-position: center;
+	background-size: cover;
+}
+section .products .item .frame .buy{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	opacity: 0.7;
+	background-color: #fff;
+	transition: all 0.5s;
+}
+section .products .item:hover .frame .buy{
+	height: 15%;
+}
+section .products .frame .buy img{
+	width: 15%;
+	padding: 5px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+section .products .description{
+	text-align: center;
+	padding: 10px;
+	line-height: 1.8em;
+}
+
+/*---------------  slick dots/button ---------------*/
+
+.slick-dots
+{
+	position: absolute;
+	bottom: 10px;
+
+	display: block;
+
+	width: 100%;
+	padding: 0px;
+	margin: 0;
+
+	list-style: none;
+
+	text-align: center;
+}
+.slick-dots li
+{
+	width: 50px;
+	height: 50px;
+	margin: 0 10px;
+	padding: 0;
+}
+.slick-dots li button
+{
+	font-size: 0;
+	line-height: 0;
+
+	display: block;
+
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+
+}
+.slick-dots li button:before
+{
+	font-family: 'slick';
+	font-size: 6px;
+	line-height: 20px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	width: 50px;
+	height: 3px;
+
+	content: '';
+	background-color: #000;
+	text-align: center;
+
+	opacity: .25;
+	color: black;
+}
+.slick-dots li:hover button:before{
+	opacity: 1;
+}
+
+section .sliderShop .slick-next{
+	right: 30px;
+	visibility: hidden;
+}
+section .sliderShop .slick-prev{
+	left: 30px;
+	z-index: 1;
+	visibility: hidden;
+}
+
+/*------------ pages 頁碼 ------------*/
+
+section .pages{
+	display: flex;
+	flex-direction: row;
+	padding: 5px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+section .pages *{
+	padding: 5px;
+}
+section .page:hover,.nextArrow:hover{
+	background-color: #efefef;
+}
+
+/*------------ backTop ------------*/
+
+section .backTop{
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	height: 55px;
+	width: 55px;
+	padding: 15px;
+	border-radius: 50%;
+	background-color: rgb(255,241,0);
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+
+	cursor: pointer;
+}
+section .backTop:active{
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+section .backTop p{
+	text-align: center;
+	color: #000;
+}
+
+/*------------ productBox 彈出商品頁視窗 ------------*/
+
+.productBox{
+	position: fixed !important;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	width: 70%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	overflow: hidden;
+
+	padding: 80px;
+	position: relative;
+	z-index: 2;
+}
+.hideBox{
+	visibility: hidden;
+}
+.productBox .closeBtn{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: #efefef;
+	height: 30px;
+	width: 30px;
+
+	cursor: pointer;
+}
+.productBox .closeBtn img{
+	width: 100%;
+	height: 100%;
+}
+.productBox .item{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+	padding: 10px;
+}
+.productBox .item .frame{
+	width: 50%;
+	margin: 15px;
+}
+.productBox .item .frame .pic{
+	width: 100%;
+	padding-top: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.productBox .item .description{
+	padding: 5px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 15px;
+
+	letter-spacing: 0.1em;
+	line-height: 1.6em;
+}
+.productBox .item .description .name,
+.productBox .item .description .price,
+.productBox .item .description .content,
+.productBox .item .description p{
+	padding: 5px 10px;
+}
+.productBox .item .description .name{
+	font-weight: bold;
+	font-size: 14px;
+}
+.productBox .item .description .price{
+	color: red;
+}
+.productBox .item .description hr{
+	width: 90%;
+	margin: 0px auto 10px auto;
+}
+.productBox .addCart{
+		display: inline-block;
+		background-color: rgb(255,241,0);
+		border: none;
+		color: #000;
+		padding: 10px 20px;
+		text-align: center;
+		text-decoration: none;
+		letter-spacing: 0.15em;
+
+		font-size: 10px;
+		cursor: pointer;
+
+		margin: 5px 10px;
+}
+
+/*------------ footer ------------*/
+
+footer{
+	height: 100px;
+	background-color: #efefef;
+}

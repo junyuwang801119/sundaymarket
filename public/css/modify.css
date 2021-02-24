@@ -1,0 +1,81 @@
+html,
+body {
+  margin: 0;
+  color:black;
+  font-family: 微軟正黑體
+}
+
+
+section {
+     min-height: 80vh;
+    padding-top:80px;
+     text-align: center;
+   
+
+}
+.container {
+	padding-top: 5%
+}
+
+.title {
+  width: 20%;
+   
+}
+
+.login-register-form {
+  margin: 0 auto;
+}
+
+
+.modifyform .bottom {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+
+}
+
+.modifyform .bottom a {
+  display: inline-block;
+  padding: 0 10px;
+  width: 100px;
+  height: auto;
+  color: black;
+  transition: .3s ease-in-out;
+  text-decoration: none
+}
+
+.modifyform .bottom a:hover {
+  transform: scale(1.07);
+  font-weight: bold
+}
+
+.modifyform .last .btn {
+  background-color: black;
+   color: white;
+  margin: 20px 0;
+  width: 40%
+ 
+}
+
+.modifyform .btn:hover {
+  background: #FFF100;
+  color: black;
+  font-weight: bold
+}
+
+.line {
+  background-image: linear-gradient(gray, gray);
+  background-size: 1px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.form-group input,
+.form-group input:focus {
+  background-color: #FFFBC2;
+}
+
+
+
+.btnheight{height: 100%;border-color:#bbb;font-size: 0.5rem}

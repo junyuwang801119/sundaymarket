@@ -1,0 +1,159 @@
+html,
+body {
+    margin: 0;
+    color: #bbb;
+    font-family: 微軟正黑體, MedicScr;
+    scroll-behavior: smooth;
+}
+
+/***************更改bootstrap設定************/
+.nav-tabs {
+    border-bottom: none
+}
+
+.nav-tabs .nav-link {
+    border: 0px solid transparent;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    width: 100%;
+    height: 48px;
+    transition: .3s ease-in-out;
+    padding: 8px 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6
+}
+
+.nav-tabs .nav-link.disabled {
+    color: #6c757d;
+    background-color: transparent;
+    border-color: transparent
+}
+
+section .nav-tabs #login-tab {
+    background-image: url(../image/loginsignup/signin2.svg);
+
+
+}
+
+section .nav-tabs #register-tab {
+    background-image: url(../image/loginsignup/register2.svg);
+
+
+
+}
+
+section  .nav-tabs #login-tab.active {
+    background-image: url(../image/loginsignup/signin1.svg);
+    background-color: transparent
+}
+
+section .nav-tabs #register-tab.active {
+    background-image: url(../image/loginsignup/register1.svg);
+    background-color: transparent
+}
+
+/******************************************/
+
+
+section {
+    min-height: 80vh;
+    padding-top:80px;
+     
+}
+.container {
+	padding-top: 5%
+}
+
+
+.login-register-form {
+    margin: 0 auto;
+}
+
+.login-register-form .nav-tabs {
+    margin-bottom: 25px;
+
+
+
+}
+
+.login-register-form .nav-tabs .nav-link:hover {
+    transform: scale(1.07);
+
+}
+
+
+.login-register-form .nav-tabs > .nav-item {
+    width: 49%;
+    text-align: center;
+
+
+}
+
+.tab-content .bottom {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+
+}
+
+.tab-content .bottom a {
+    display: inline-block;
+    padding: 0 10px;
+    width: 100px;
+    height: auto;
+    color: black;
+    transition: .3s ease-in-out;
+    text-decoration: none
+}
+
+.tab-content .bottom a:hover {
+    transform: scale(1.07);
+    font-weight: bold
+}
+
+.tab-content .btn {
+    width: 100%;
+    background-color: black;
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 20px
+}
+
+.tab-content .btn:hover {
+    background: #FFF100;
+    color: black;
+    font-weight: bold
+}
+
+.line {
+    background-image: linear-gradient(gray, gray);
+    background-size: 1px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.form-group input,
+.form-group input:focus {
+    background-color: #FFFBC2;
+}
+
+#announce:checked + .confirm {
+    color: black;
+
+}
+
+.custom-checkbox {
+    font-size: 0.8em
+}
+
+
+.card {
+    margin-top: 10%
+}

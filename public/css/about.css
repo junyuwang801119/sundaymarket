@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+body,
+html {
+    width: 100%
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(10%, 0, 0);
+        transform: translate3d(10%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-10%, 0, 0);
+        transform: translate3d(-10%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(10%, 0, 0);
+        transform: translate3d(10%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-10%, 0, 0);
+        transform: translate3d(-10%, 0, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@media(max-width:992px) {}
+
+
+@media(min-width:768px) {
+    #sec2 .row:nth-of-type(odd) {
+        flex-direction: row-reverse
+    }
+}
+
+@media(max-width:767px) {
+    #sec2 .row img {
+        padding: 0 10%;
+        background-color: white;
+        z-index: 1
+    }
+
+    #sec2 {
+        margin-bottom: 10%
+    }
+}
+
+/*********************************#sec1***********************************************/
+#sec1 {
+  padding-top: 80px
+  ;
+ 
+  
+}
+#sec1 img{width: 100%;height: auto}
+/*********************************#sec2***********************************************/
+#sec2 .row {
+    width: 100%;
+    margin: 0
+}
+
+#sec2 .col-12,
+.col-md-6 {
+    padding: 0
+}
+
+.aboutimg {
+    max-height: 500px;
+    overflow: hidden
+}
+
+#sec2 .row img {
+    width: 100%;
+    margin-top: -3%;
+    background-color: white;
+    z-index: 1
+}
+
+#sec2 .row h2 {
+    padding: 10% 10% 1%;
+    font-size: calc(1.8rem + 1.3vw);
+}
+
+#sec2 .row p {
+    padding: 0 10% 10%;
+    width: 100%;
+    font-size: calc(1rem + 0.1vw);
+    text-indent: 30pt;
+  text-align: justify
+}
+
+
+/*********************************#sec3***********************************************/
+#sec3 .container-fluid {
+    background-color: #FFFEED;
+    padding: 3% 0 6%;
+    margin: 0;
+}
+
+#sec3 .row {
+    width: 85%;
+    margin: 0 auto
+}
+
+#sec3 p {
+    color: black;
+    margin: 0;
+    font-size: calc(0.4rem + 0.5vw);
+}
+
+#sec3 .item img {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+#sec3 .item {
+    text-align: center;
+    padding: 0 5%
+}
+
+#sec3 h3 {
+  padding-top: 14px;
+    font-size: calc(1rem + 0.5vw);
+}
+
+#sec3 .team{
+  text-align: center;
+  padding-bottom: 4%
+}
+
+#sec3 .team img{
+  width: 12%
+}

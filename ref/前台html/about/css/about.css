@@ -1,0 +1,131 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box
+}
+
+body,
+html {
+  width: 100%
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(10%, 0, 0);
+    transform: translate3d(10%, 0, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, 0, 0);
+    transform: translate3d(-10%, 0, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(10%, 0, 0);
+    transform: translate3d(10%, 0, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-10%, 0, 0);
+    transform: translate3d(-10%, 0, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+  }
+}
+
+
+@media(min-width:768px) {
+  #sec2 .row:nth-of-type(odd) {
+    flex-direction: row-reverse
+  }
+}
+
+@media(max-width:767px) {
+  #sec2 .row img {
+    padding: 0 10%;
+    background-color: white;
+    z-index: 1
+  }
+  #sec2{margin-bottom: 10%}
+}
+
+/*********************************#sec2***********************************************/
+#sec2 .row {
+  width: 100%;
+  margin: 0
+}
+
+#sec2 .col-12,
+.col-md-6 {
+  padding: 0
+}
+
+.aboutimg {
+  max-height: 500px;
+  overflow: hidden
+}
+
+#sec2 .row img {
+  width: 100%;
+  margin-top: -3%;
+  background-color: white;
+  z-index: 1
+}
+
+#sec2 .row h1 {
+  padding: 10% 10% 1%
+}
+
+#sec2 .row p {
+  padding: 1% 10% 10%;
+  width: 100%
+}
+
+
+/*********************************#sec3***********************************************/
+#sec3 .container-fluid {
+  background-color: bisque;
+  padding: 2% 0;
+  margin: 0;
+}
+
+#sec3 .row{width: 85%;margin: 0 auto}
+
+#sec3 p{color: darkgray;font-size: 1.5em;margin: 0}
+#sec3 .item img{width: 90%; margin: 0 auto; border-radius: 50%; border: 6px solid #fff;}
+#sec3 .item {
+  text-align: center;padding: 0 20%
+}
+
